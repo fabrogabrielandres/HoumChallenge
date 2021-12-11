@@ -3,8 +3,8 @@ import { usePokemonPaginated } from '../hooks/usePokemonPaginated';
 
 export const HomeScreen = () => {
 
-    let algo=usePokemonPaginated()
-    console.log(algo);
+    let {isLoading,pokemonList}=usePokemonPaginated()
+    console.log(pokemonList);
     
     return (
         <div>
