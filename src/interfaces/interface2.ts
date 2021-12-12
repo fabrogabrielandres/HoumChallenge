@@ -14,7 +14,8 @@ export interface Result {
 export interface Pokemon{
     name : string;
     id:string;
-    imageUrl:string    
+    imageUrl:string;
+    color?:string;    
 }
 
         /* esto retorna la url de cada pokemon */
