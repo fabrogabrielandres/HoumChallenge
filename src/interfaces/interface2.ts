@@ -20,7 +20,7 @@ export interface Pokemon{
 
         /* esto retorna la url de cada pokemon */
 
-export interface Atributos {
+export interface Atributs {
     abilities:                Ability[];
     base_experience:          number;
     forms:                    Species[];
