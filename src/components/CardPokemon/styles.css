@@ -1,0 +1,37 @@
+.efecto {
+	border-radius: 100%;
+	animation-duration: 3s;
+	overflow: hidden;
+	animation-name: girar;
+	animation-iteration-count: infinite;
+}
+
+.container{
+    transform: scale(1.1);
+    min-width: 150px;
+    max-width: 250px;
+    width: 30%;
+    min-height: 250px;
+    margin:3%;
+    max-height:300px;
+    position:relative
+}
+
+.container:hover{
+    transform: scale(1.2);
+}
+
+
+
+@keyframes girar {
+	0% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+    0% {
+		transform: rotate(0deg);
+
+	}
+}

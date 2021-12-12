@@ -16,8 +16,6 @@ export const usePokemonPaginated = () => {
         nextPageUrl.current=resp.data.next
 		/* Map de pokemonlist and create pokemon list */
 		resp.data.results.forEach(({ name, url }) => {
-			console.log(resp.data);
-			
 			const urlParts = url.split('/');
 			const id = urlParts[urlParts.length - 2];
 			const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
