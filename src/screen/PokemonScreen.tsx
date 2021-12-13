@@ -9,7 +9,7 @@ export const PokemonScreen = () => {
 	let id = params.id
 	
 	const { atributs, isLoading } = usePokemon(id)
-	console.log(atributs);
+	console.log(atributs,isLoading);
 	
 	return (
 		<Flex flexDir={'column'}>
@@ -19,6 +19,11 @@ export const PokemonScreen = () => {
 			<Flex w={'100%'} h={'70vh'}>
 				chau
 			</Flex>
+			{
+				isLoading ? <h1>cargando....</h1> : <h1>termino</h1>
+			}
+
+
 		</Flex>
 	);
 };
