@@ -1,0 +1,61 @@
+.pokebola {
+	top: 30%;
+	right: 50%;
+	transform: translateX(50%);
+	position: absolute;
+    animation: gira 2s ;
+}
+
+.img {
+	top: 30%;
+	right: 50%;
+	transform: translateX(50%) translateY(15%);
+    animation-name: crece;
+    animation-duration: 4s;
+
+
+}
+
+@keyframes gira {
+    0%{
+        transform: translate(-200%,-50%) rotate(0deg)  scale(0);    
+    }
+
+    50%{
+        transform: translate(50%,10%) rotate(3600deg)  scale(0.6);
+        
+    }
+    60%{
+        transform: translate(50%,0%) rotate(3600deg)  scale(0.6);  
+    }
+    70%{
+        transform: translate(50%,10%) rotate(3600deg)  scale(0.6);  
+    }
+    80%{
+        transform: translate(50%,0%) rotate(3600deg)  scale(0.6);  
+    }
+    90%{
+        transform: translate(50%,5%) rotate(3600deg)  scale(0.6);  
+    }
+    95%{
+        transform: translate(50%,2%) rotate(3600deg)  scale(0.6);  
+    }
+    100%{
+        transform: translate(50%,0%) rotate(3600deg)  scale(1);  
+    }
+}
+
+@keyframes crece {  
+    0%{
+        transform: translate(-200%,-50%)  rotate(0deg) scale(0);
+    } 
+    50%{
+        transform:  translate(50%,15%)  rotate(-3600deg) scale(0);
+    }
+    75%{
+        transform:  translate(50%,15%)  rotate(-3600deg) scale(0.5);
+    }
+    100%{
+        transform:  translate(50%,15%)  rotate(-3600deg) scale(1);
+    } 
+}
