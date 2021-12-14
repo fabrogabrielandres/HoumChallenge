@@ -59,3 +59,10 @@
         transform:  translate(50%,15%)  rotate(-3600deg) scale(1);
     } 
 }
+
+
+.sprites:hover{
+    transform: translateY(-5px) ;
+
+}
+

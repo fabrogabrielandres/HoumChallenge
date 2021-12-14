@@ -9,7 +9,7 @@ export const HomeScreen = () => {
 
 	return (
 		<InfiniteScroll next={loadPokemons} dataLength={pokemonList.length} hasMore={loading} loader={<Loader />}>
-			<Flex justifyContent={"space-evenly"} flexWrap={"wrap"}>
+			<Flex justifyContent={"space-evenly"} flexWrap={"wrap"} >
 				{pokemonList.map((pokemon, idx) => {
 					return <CardPokemon pokemon={pokemon} key={idx} />;
 				})}
