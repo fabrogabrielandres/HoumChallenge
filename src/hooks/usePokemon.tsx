@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { pokemonApi } from '../api/pokemonApi';
-import { Atributs } from '../interfaces/interface2';
+import { Atributs } from '../interfaces/interface';
 
 
 export const usePokemon = (id?:string) => {

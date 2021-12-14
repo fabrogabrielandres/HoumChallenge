@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { pokemonApi } from '../api/pokemonApi';
-import { Responce, Pokemon } from '../interfaces/interface2';
+import { Responce, Pokemon } from '../interfaces/interface';
 
 export const usePokemonPaginated = () => {
     const [loading, setLoading] = useState(true)

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Img, Text, Box } from '@chakra-ui/react';
-import { Pokemon } from '../../interfaces/interface2';
+import { Pokemon } from '../../interfaces/interface';
 import { useNavigate } from 'react-router-dom';
 import './styles.css';
 import { ColorExtractor } from 'react-color-extractor';
