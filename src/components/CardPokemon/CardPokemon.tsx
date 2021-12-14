@@ -23,9 +23,9 @@ export const CardPokemon = ({ pokemon }: Props) => {
 			boxShadow="2xl"
 			mt={50}
 			transition={'all 0.2s ease-in-out'}
-			bgGradient={`linear(to-r,${palettColors[0]},${palettColors[2]} ,${palettColors[1]},${palettColors[4]})`}
+			bgGradient={`linear(to-r,${palettColors[0]} ,${palettColors[1]})`}
 			_hover={{
-				bgGradient: `linear(to-r,${palettColors[1]},${palettColors[0]} ,${palettColors[4]},${palettColors[3]})`,
+				bgGradient: `linear(to-l,${palettColors[4]},${palettColors[2]})`,
 				transform: 'scale(1.09)'
 			}}
 		>

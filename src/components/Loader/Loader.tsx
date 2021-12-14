@@ -3,9 +3,9 @@ import React from 'react';
 
 export const Loader = () => {
 	return (
-		<Flex justify={'center'} align={'center'} h={'100vh'}>
-			<Text>Loading...</Text>
-			<Spinner thickness="4px" speed="0.65s" emptyColor="gray.200" color="blue.500" size="xl" />
-		</Flex>
+			<Flex justify={'center'} align={'center'} h={'100vh'} bg={"#fef1f0"}> 
+				<Text mr={10} color={"#ff452b"}>Loading...</Text>
+				<Spinner thickness="4px" speed="0.65s" emptyColor="gray.200" color="#ff452b" size="xl" />
+			</Flex>
 	);
 };

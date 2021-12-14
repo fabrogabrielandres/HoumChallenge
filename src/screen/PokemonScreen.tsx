@@ -1,12 +1,11 @@
 import React from 'react';
 import { Flex } from '@chakra-ui/react';
-import { useNavigate,useParams  } from 'react-router-dom';
+import { useParams  } from 'react-router-dom';
 import { usePokemon } from '../hooks/usePokemon';
 import { Loader } from '../components/Loader/Loader';
 import { AtributsPokemon } from '../components/AtributsPokemon/AtributsPokemon';
 
 export const PokemonScreen = () => {
-	let navigate = useNavigate()
 	let params = useParams ();
 	let id = params.id
 	
