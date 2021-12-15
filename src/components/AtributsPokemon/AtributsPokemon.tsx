@@ -4,6 +4,7 @@ import { Atributs } from '../../interfaces/interface';
 import pokebola from '../../assets/pokebola.png';
 import pokebolab from '../../assets/pokebola-blanca.png';
 import './styles.css';
+import LazyLoad from 'react-lazyload';
 
 interface Props {
 	atributs: Atributs;
@@ -26,7 +27,9 @@ export const AtributsPokemon = ({ atributs, id }: Props) => {
 						className="pokebola"
 						position={'absolute'}
 					/>
-					<Img src={imageUrl} w={'30%'} className="img" position={'absolute'} />
+					<LazyLoad height="100%">
+						<Img src={imageUrl} w={'30%'} className="img" position={'absolute'} />
+					</LazyLoad>
 				</Flex>
 			</Box>
 			<Box ml="20px" mt="20px">

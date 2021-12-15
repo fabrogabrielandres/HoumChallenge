@@ -12,6 +12,8 @@ export const CardPokemon = ({ pokemon }: Props) => {
 	const [ palettColors, setPalettColors ] = useState([]);
 	const { id, imageUrl, name } = pokemon;
 	let navigate = useNavigate();
+	
+
 
 	const getColors = (colors: []) => {
 		setPalettColors(colors);
