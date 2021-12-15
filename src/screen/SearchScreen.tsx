@@ -46,7 +46,7 @@ export const SearchScreen = () => {
 			<Box w={'100%'} mt={10}>
 				<InputGroup w="70%" margin="0 auto" boxShadow="dark-lg">
 					<InputLeftElement pointerEvents="none" children={<Search2Icon color="gray.300" />} />
-					<Input type="tel" placeholder="Phone number" onChange={(e) => setQuery(e.target.value)} />
+					<Input placeholder="Phone number" onChange={(e) => setQuery(e.target.value)} />
 				</InputGroup>
 			</Box>
 			<Text mt={10} display="block" fontSize="x-large" color="#ff452b">
