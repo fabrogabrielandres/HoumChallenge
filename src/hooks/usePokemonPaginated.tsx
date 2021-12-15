@@ -5,7 +5,7 @@ import { Responce, Pokemon } from '../interfaces/interface';
 export const usePokemonPaginated = () => {
     const [loading, setLoading] = useState(true)
 	const [ pokemonList, setPokemonList ] = useState<Pokemon[]>([]);
-    let nextPageUrl = useRef('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10');
+    let nextPageUrl = useRef('https://pokeapi.co/api/v2/pokemon?offset=0&limit=5');
     
 	const loadPokemons = async () => {
         setLoading(true)
