@@ -23,7 +23,7 @@ export const CardPokemon = ({ pokemon }: Props) => {
 	};
 
 	return (
-		<Center py={6} mt={20} mr={10}>
+		<Center py={6} mt={5} mr={10}>
 			<Box
 				maxW={'320px'}
 				w={'full'}
@@ -39,13 +39,10 @@ export const CardPokemon = ({ pokemon }: Props) => {
 			>
 				<Box position={'relative'}>
 					<Avatar
-						top={-20}
-						right={-10}
 						size={'xl'}
 						src={imageUrl}
 						alt={'Avatar Alt'}
 						mb={4}
-						position={'absolute'}
 						_after={{
 							content: '""',
 							w: 4,
