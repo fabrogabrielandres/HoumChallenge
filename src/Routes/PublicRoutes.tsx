@@ -10,7 +10,7 @@ export const PublicRoutes = () => {
 		<div>
 			<NavBar />
 			<Routes>
-				<Route path="/home" element={<HomeScreen />} />
+				<Route path="/" element={<HomeScreen />} />
 				<Route path="/pokemon/:id" element={<PokemonScreen />} />
 				<Route path="/search" element={<SearchScreen />} />
 			</Routes>

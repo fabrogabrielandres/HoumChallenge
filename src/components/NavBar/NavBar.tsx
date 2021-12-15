@@ -9,9 +9,9 @@ export const NavBar = () => {
 	let params = useParams();
 	return (
 		<Flex justifyContent={'space-around'} mb={10} h={'15vw'} align={'center'}>
-			{params.id !== 'home' && <ArrowBackIcon h="7vw" w="7vw" onClick={() => navigate('/home')} />}
+			{params.id !== '' && <ArrowBackIcon h="7vw" w="7vw" onClick={() => navigate('/')} />}
 			<Img src={logo} h="10vw" />
-			{params.id !== 'home' && <SearchIcon h="5vw" w="5vw" onClick={() => navigate('/search')} />}
+			{params.id !== '' && <SearchIcon h="5vw" w="5vw" onClick={() => navigate('/search')} />}
 		</Flex>
 	);
 };
