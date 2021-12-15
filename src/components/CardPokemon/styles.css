@@ -1,9 +1,11 @@
 .efecto {
-	border-radius: 100%;
 	animation-duration: 9s;
-	overflow: hidden;
 	animation-name: girar;
 	animation-iteration-count: infinite;
+}
+
+.efecto:hover{
+	background-color: "red";
 }
 
 .container{
