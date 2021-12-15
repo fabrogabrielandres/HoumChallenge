@@ -26,15 +26,16 @@ export const CardPokemon = ({ pokemon }: Props) => {
 			<Box
 				maxW={'320px'}
 				w={'full'}
-				bgGradient={`linear(to-r,${palettColors[0]} ,${palettColors[1]})`}
+				bgGradient={`linear(to-r,${palettColors[4]},${palettColors[3]} ,${palettColors[2]})`}
 				_hover={{
-					bgGradient: `linear(to-l,${palettColors[4]},${palettColors[2]})`,
+					bgGradient: `linear(to-l,${palettColors[0]},${palettColors[1]},${palettColors[2]})`,
 					transform: 'scale(1.09)',
 				}}
 				boxShadow={'2xl'}
 				rounded={'lg'}
 				p={6}
 				textAlign={'center'}
+				transition="all 0.5s ease-in-out"
 			>
 				<Box position={'relative'}>
 					<Avatar
