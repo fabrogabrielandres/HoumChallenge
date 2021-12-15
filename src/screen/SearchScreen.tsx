@@ -1,4 +1,4 @@
-import { Flex, Text, InputGroup, InputLeftElement, Input, Box, Img } from '@chakra-ui/react';
+import { Flex, Text, InputGroup, InputLeftElement, Input, Box,  } from '@chakra-ui/react';
 import { Search2Icon } from '@chakra-ui/icons';
 import { usePokemonSearch } from '../hooks/usePokemonSearch';
 import { useEffect, useState } from 'react';
@@ -17,6 +17,7 @@ export const SearchScreen = () => {
 
 	useEffect(() => {
 		loadPokemons();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	useEffect(
@@ -30,6 +31,7 @@ export const SearchScreen = () => {
 				)
 			);
 		},
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[ debounceValue ]
 	);
 

@@ -2,7 +2,6 @@ import { Box, Flex, Img, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Atributs } from '../../interfaces/interface';
 import pokebola from '../../assets/pokebola.png';
-import pokebolab from '../../assets/pokebola-blanca.png';
 import './styles.css';
 import LazyLoad from 'react-lazyload';
 

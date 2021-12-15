@@ -1,4 +1,4 @@
-import { Flex, Img, Text } from '@chakra-ui/react';
+import { Flex, Img  } from '@chakra-ui/react';
 import logo from '../../assets/houmLogo.svg';
 import React from 'react';
 import { ArrowBackIcon, SearchIcon } from '@chakra-ui/icons';
