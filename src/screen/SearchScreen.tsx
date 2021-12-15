@@ -22,9 +22,10 @@ export const SearchScreen = () => {
 
 	useEffect(
 		() => {
-			if (debounceValue.length === 0) {
+			if (debounceValue.length < 3) {
 				return setPokemonFiltered([]);
 			}
+			
 			setPokemonFiltered(
 				pokemonList.filter((pokemon) =>
 					pokemon.name.toLocaleLowerCase().includes(debounceValue.toLocaleLowerCase())
