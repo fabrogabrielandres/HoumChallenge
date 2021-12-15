@@ -12,7 +12,6 @@ interface Props {
 
 export const AtributsPokemon = ({ atributs, id }: Props) => {
 	const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
-
 	return (
 		<Box>
 			<Box h={'40vw'}>
@@ -31,19 +30,19 @@ export const AtributsPokemon = ({ atributs, id }: Props) => {
 				</Flex>
 			</Box>
 			<Box ml="20px" mt="20px">
-				<Text fontSize={'x-large'} fontWeight={'bold'} display={'inline-block'}>
+				<Text fontSize={'x-large'} color="#ff452b" fontWeight={'bold'} display={'inline-block'}>
 					Types :
 				</Text>
 				{atributs.types.map((elemet, idx) => (
-					<Text fontSize={'x-large'} fontWeight={'bold'} key={idx} ml={2} display={'inline-block'}>
+					<Text fontSize={'x-large'} color="#ff452b" fontWeight={'bold'} key={idx} ml={2} display={'inline-block'}>
 						{elemet.type.name}
 					</Text>
 				))}
-				<Text mt="20px" fontSize={'x-large'} fontWeight={'bold'}>
+				<Text mt="20px" color="#ff452b" fontSize={'x-large'} fontWeight={'bold'}>
 					Weight :{atributs.weight}
 				</Text>
 				<Flex mt="20px" justifyContent={'space-between'} flexWrap={'wrap'} align={'center'}>
-					<Text fontSize={'x-large'} fontWeight={'bold'}>
+					<Text fontSize={'x-large'} fontWeight={'bold'} color="#ff452b">
 						Sprites:
 					</Text>
 					<Img h={'10vw'} className="sprites" src={atributs.sprites.front_default} />
@@ -51,6 +50,9 @@ export const AtributsPokemon = ({ atributs, id }: Props) => {
 					<Img h={'10vw'} className="sprites" src={atributs.sprites.back_shiny} />
 					<Img h={'10vw'} className="sprites" src={atributs.sprites.front_shiny} />
 				</Flex>
+				<Text color="#ff452b" fontWeight={'bold'}  fontSize={'x-large'}>
+					Weight: {atributs.height}
+				</Text>
 			</Box>
 		</Box>
 	);
