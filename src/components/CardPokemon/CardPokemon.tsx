@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ColorExtractor } from 'react-color-extractor';
 import pokebola from '../../assets/pokebola.png';
 import { Img } from '@chakra-ui/react';
-import { Center, Box, Avatar, Stack, Heading, Text,  } from '@chakra-ui/react';
+import { Center, Box, Avatar, Stack, Heading, Text } from '@chakra-ui/react';
 import './styles.css';
 
 interface Props {
@@ -17,20 +17,19 @@ export const CardPokemon = ({ pokemon }: Props) => {
 	let navigate = useNavigate();
 	let sprite = [ '', 'back', 'back/shiny', 'shiny' ];
 
-
 	const getColors = (colors: []) => {
 		setPalettColors(colors);
 	};
 
 	return (
-		<Center py={6} mt={5} mr={10}>
+		<Center py={6} mt={5} mr={10} className="fadein" overflow="hidden">
 			<Box
 				maxW={'320px'}
 				w={'full'}
 				bgGradient={`linear(to-r,${palettColors[0]} ,${palettColors[1]})`}
 				_hover={{
 					bgGradient: `linear(to-l,${palettColors[4]},${palettColors[2]})`,
-					transform: 'scale(1.09)'
+					transform: 'scale(1.09)',
 				}}
 				boxShadow={'2xl'}
 				rounded={'lg'}

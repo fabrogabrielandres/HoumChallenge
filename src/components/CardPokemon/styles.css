@@ -34,3 +34,23 @@
 
 	}
 }
+
+
+@keyframes entrada {
+	0% {
+		transform: translateX(500%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 0.8;
+	}
+    
+}
+
+
+.fadein{
+	animation-duration: 1.2s;
+	animation-name: entrada;
+	animation-iteration-count:1;
+}
