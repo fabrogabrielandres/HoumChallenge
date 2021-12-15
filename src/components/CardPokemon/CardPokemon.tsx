@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ColorExtractor } from 'react-color-extractor';
 import pokebola from '../../assets/pokebola.png';
 import { Img } from '@chakra-ui/react';
-import { Center, Box, Avatar, Stack, Heading, Text, useColorModeValue, Badge } from '@chakra-ui/react';
+import { Center, Box, Avatar, Stack, Heading, Text,  } from '@chakra-ui/react';
 import './styles.css';
 
 interface Props {
